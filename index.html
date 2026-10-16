@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CloudTrip | Travel Planner</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#">☁ CloudTrip</a><nav><a href="#destinations">Destinations</a><a href="#planner">Trip planner</a><a href="#mytrips">My trips</a></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</span><h1>Make room for<br><em>somewhere new.</em></h1><p>Discover inspiring places and keep your travel plans organized in one simple space.</p><a class="primary" href="#planner">Plan a trip <span>→</span></a></div><div class="hero-photo" role="img" aria-label="Scenic mountain lake"></div></section>
+<section id="destinations" class="section"><div class="section-heading"><div><span class="eyebrow">GET INSPIRED</span><h2>Popular destinations</h2></div><p>A few places worth adding to your list.</p></div>
+<div class="destinations">
+<article class="destination"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Goa coastline"><div><h3>Goa, India</h3><p>Beaches · Sunsets</p><button class="text-button" data-place="Goa, India">Plan this trip ↗</button></div></article>
+<article class="destination"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal"><div><h3>Agra, India</h3><p>Heritage · Culture</p><button class="text-button" data-place="Agra, India">Plan this trip ↗</button></div></article>
+<article class="destination"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Mountain scenery"><div><h3>Manali, India</h3><p>Mountains · Nature</p><button class="text-button" data-place="Manali, India">Plan this trip ↗</button></div></article>
+</div></section>
+<section id="planner" class="planner-wrap"><div class="planner-intro"><span class="eyebrow">MAKE IT HAPPEN</span><h2>Plan your next trip</h2><p>Add a destination and travel date. Your plans are saved in this browser.</p></div>
+<form id="tripForm" class="planner-form"><label>Destination<input id="destination" placeholder="e.g. Jaipur, India" required maxlength="80"></label><label>Travel date<input id="date" type="date" required></label><button class="primary" type="submit">Add to my trips +</button></form></section>
+<section id="mytrips" class="section mytrips"><div class="section-heading"><div><span class="eyebrow">YOUR SAVED PLANS</span><h2>My trips <span id="tripCount" class="count">0</span></h2></div><button id="clearTrips" class="text-button">Clear all</button></div><div id="tripList" class="trip-list"><p class="empty">No trips yet. Add your first destination above.</p></div></section>
+</main><footer><span>☁ CloudTrip</span><span>Student cloud-hosting project · 2026</span></footer><script src="script.js"></script>
+</body></html>
